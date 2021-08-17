@@ -1,7 +1,7 @@
 <?php
 
 function flatten_layer($numbers){
-    if(!is_array($numbers)){
+    if(!is_array($numbers) ){
         return $numbers;
     }
     $ans=array();
