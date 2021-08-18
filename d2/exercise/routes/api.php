@@ -17,9 +17,9 @@ use App\Models\UserClient;
 */
 //
 
-Route::get('UserClient', [UserClientController::class, 'index']);
-Route::get('UserClient/{id}', [UserClientController::class, 'show']);
-Route::post('UserClient', [UserClientController::class, 'store']);
-Route::delete('UserClient/{id}', [UserClientController::class, 'deleteUser']);
+Route::get('userClient', [UserClientController::class, 'index']);
+Route::get('userClient/{id}', [UserClientController::class, 'show']);
+Route::post('userClient', [UserClientController::class, 'store']);
+Route::delete('userClient/{id}', [UserClientController::class, 'deleteUser']);
 
 
