@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserClientController;
+use App\Http\Middleware\EnsureTokenIsValid;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\UserClient;
@@ -18,8 +19,8 @@ use App\Models\UserClient;
 //
 
 Route::get('userClient', [UserClientController::class, 'index']);
-Route::get('userClient/{id}', [UserClientController::class, 'show']);
+Route::get('userClient/{id}', [UserClientController::class, 'show'])->middleware(EnsureTokenIsValid::class);;
 Route::post('userClient', [UserClientController::class, 'store']);
-Route::delete('userClient/{id}', [UserClientController::class, 'deleteUser']);
+Route::delete('userClient/{id}', [UserClientController::class, 'deleteUser'])->middleware(EnsureTokenIsValid::class);
 
 
