@@ -1,7 +1,7 @@
 
 ## About Project
 
-A simple using Laravel, php and mysql as a Database. 
+A simple application using Laravel, php and mysql as a Database. 
 Demonstrating a social Media application . 
 
 
